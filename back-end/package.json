@@ -1,0 +1,25 @@
+{
+  "name": "have-you-been-outside",
+  "version": "1.0.0",
+  "description": "solo-project codesmith",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^8.0.4",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.4"
+  }
+}
