@@ -1,0 +1,62 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap');
+
+body{
+  background-color: $root-yellow;
+}
+
+.head{
+  height: 75px;
+}
+
+#root{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container{
+  width: 100%;
+  height: 100%;
+}
+
+.app{
+  background-color: $root-yellow;
+  width: 1200px;
+  height: 700px;
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // filter: drop-shadow(18px 5px 10px $dropshadow);
+}
+
+.grass-container{
+  display: flex;
+  flex-direction: row;
+}
+
+#grass{
+  width: auto;
+  object-fit: contain;
+}
+
+
+.compo{
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  position: inherit;
+}
+
+h1{
+  font-family: 'Moo Lah Lah', sans-serif;
+  font-size: 110px;
+  color: $background-blue;
+  display: flex;
+  align-items: center;
+}
+
