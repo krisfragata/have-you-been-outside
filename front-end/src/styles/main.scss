@@ -3,6 +3,7 @@
 
 body{
   background-color: $root-yellow;
+  overflow: hidden;
 }
 
 .head{
@@ -18,45 +19,77 @@ body{
 .main-container{
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .app{
   background-color: $root-yellow;
-  width: 1200px;
-  height: 700px;
+  width: 100vw;
+  height: 640px;
   border-radius: 20px;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-between;
   justify-content: center;
+  z-index: 1;
   // filter: drop-shadow(18px 5px 10px $dropshadow);
 }
 
-.grass-container{
-  display: flex;
-  flex-direction: row;
+.footer{
+  height: 200px;
+  width: auto;
+  z-index: 2;
 }
 
 #grass{
   width: auto;
+  height: auto;
   object-fit: contain;
 }
 
 
-.compo{
-  width: 1000px;
-  height: 500px;
+.contain{
+  width: 100vw;
+  height: 100vh;
+  // border-style: solid;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
   justify-content: center;
-  position: inherit;
+}
+
+.title{
+  width: 50%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 40px;
+  padding: 0;
+  // justify-content: space-between;
+}
+
+.compo{
+  width: 50%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1{
   font-family: 'Moo Lah Lah', sans-serif;
   font-size: 110px;
   color: $background-blue;
-  display: flex;
-  align-items: center;
+}
+
+button{
+  margin: 10px;
+  padding: 5px;
+  width: 50px;
 }
 

@@ -2,11 +2,13 @@ import React from "react";
 import AppContainer from "./AppContainer";
 import fullGrass from "../../public/assets/full-grass.png";
 
-const MainContainer = () => {
+const MainContainer = ({ classProp }) => {
   return (
     <div className="main-container">
       <AppContainer />
-      <img src={fullGrass}></img>
+      <div className="footer">
+        <img src={fullGrass} id="grass"></img>
+      </div>
     </div>
   );
 };
