@@ -4,6 +4,9 @@ const express = require("express");
 const connectDB = require("./config/db");
 const app = express();
 const PORT = process.env.PORT || 8080;
+const oAuthID = process.env.OAUTH_ID;
+const oAuthSecret = process.env.OAUTH_SECRET;
+const redirectGoogle = "http://localhost:8080/api/login/sessions/oath/google";
 
 //initialize connectDB
 connectDB();

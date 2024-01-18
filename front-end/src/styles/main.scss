@@ -1,9 +1,41 @@
 @import 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 
 body{
   background-color: $root-yellow;
   overflow: hidden;
+  cursor: url('../../public/assets/cursor.png');
+}
+
+
+h1{
+  font-family: 'VT323', sans-serif;
+  font-size: 110px;
+  padding: 0;
+  margin: 0;
+  color: $background-blue;
+
+}
+
+h2{
+  font-family: 'VT323', sans-serif;
+  font-size: 90px;
+  color: $background-blue;
+}
+
+p1{
+  font-family: sans-serif;
+}
+
+p{
+  font-family: sans-serif;
+  color: $background-blue
+}
+
+input{
+  margin: 5px;
 }
 
 .head{
@@ -49,6 +81,10 @@ body{
   object-fit: contain;
 }
 
+.header{
+  display: flex;
+  flex-direction: row;
+}
 
 .contain{
   width: 100vw;
@@ -67,9 +103,15 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-left: 40px;
   padding: 0;
   // justify-content: space-between;
+}
+
+#donny{
+  max-width: 95%;
+  max-height: 95%;
 }
 
 .compo{
@@ -79,17 +121,73 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-content: center;
 }
 
-h1{
-  font-family: 'Moo Lah Lah', sans-serif;
-  font-size: 110px;
-  color: $background-blue;
+.feed{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+#icon{
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.auth{
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.prompt{
+  width: 70%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  z-index: 3;
+}
+
+
 
 button{
   margin: 10px;
   padding: 5px;
-  width: 50px;
+  width: auto;
+  background-color: $app-green;
+  color: $background-blue;
 }
+
+button:hover{
+  background-color: $background-blue;
+  color: $root-yellow;
+}
+
+#oauth{
+  margin: 0;
+  padding: 0;
+}
+
+.popup{
+  font-family: sans-serif;
+  margin: 15px;
+}
+
 
