@@ -1,14 +1,12 @@
-import React from 'react';
-import MainContainer from './containers/MainContainer';
-
-
+import React from "react";
+import MainContainer from "./containers/mainContainer";
 
 const App = () => {
-  return(
+  return (
     <div>
-      <MainContainer classProp={'compo'} />
+      <MainContainer />
     </div>
-  )
-}
+  );
+};
 
 export default App;

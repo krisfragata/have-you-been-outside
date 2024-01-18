@@ -2,7 +2,7 @@ import React from "react";
 import AppContainer from "./AppContainer";
 import fullGrass from "../../public/assets/full-grass.png";
 
-const MainContainer = ({ classProp }) => {
+const MainContainer = (props) => {
   return (
     <div className="main-container">
       <AppContainer />

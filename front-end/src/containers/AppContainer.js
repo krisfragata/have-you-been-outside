@@ -1,14 +1,18 @@
 import React from "react";
-import Home from "../components/Home";
-import grass from "../../public/assets/grass.png";
-import fullGrass from "../../public/assets/full-grass.png";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from "./Home";
 
-const page = <Home />
+// const BrowserRouter = createBrowserRouter();
 
 const AppContainer = () => {
   return (
     <div className="app">
-      {page}
+      <Home />
     </div>
   );
 };
